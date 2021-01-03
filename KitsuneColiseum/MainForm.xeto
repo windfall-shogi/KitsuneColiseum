@@ -2,15 +2,29 @@
 <Form
 	xmlns="http://schema.picoe.ca/eto.forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	Title="My Eto Form"
-	ClientSize="400, 350"
+	Title="KITSUNECOLISEUM"
+	ClientSize="800, 650"
 	Padding="10"
 	>
-	<StackLayout>
-		<Label>Some Content</Label>
-	</StackLayout>
+  <StackLayout>
+    <Label>Some Content1</Label>
+    <TextBox x:Name="tbx" Width="100" Text="abc"/>
+    <TextBox x:Name="tbx1" Width="100" Text="cd"/>
+    <Panel>
+      <Splitter>
+        <Splitter.Orientation>Horizontal</Splitter.Orientation>
+        <Splitter.SplitterWidth>100</Splitter.SplitterWidth>
+        <Splitter.Panel1>
+          <Label>Some Content Left</Label>
+        </Splitter.Panel1>
+        <Splitter.Panel2>
+          <Label>Some Content Right</Label>
+        </Splitter.Panel2>
+      </Splitter>
+    </Panel>
+  </StackLayout>
 
-	<Form.Menu>
+  <Form.Menu>
 		<MenuBar>
 			<ButtonMenuItem Text="F&amp;ile">
 				<ButtonMenuItem Text="Click Me!" Click="HandleClickMe" />
